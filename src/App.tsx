@@ -14,7 +14,7 @@ export default function App() {
   const [isGenerating, setIsGenerating] = useState(false);
 
   // Character image from the user's request
-  const CHAR_URL = `/Gemini_Generated_Image_bfapzebfapzebfap (1) (1).png`;
+  const CHAR_URL = `/char.png`;
   const LOGO_URL = `/input_file_1.png?t=${Date.now()}`;
 
   const [charImgError, setCharImgError] = useState(false);
@@ -197,7 +197,7 @@ export default function App() {
             </h1>
             <div className="flex justify-center mb-6">
               <img 
-                src="/Gemini_Generated_Image_bfapzebfapzebfap (1) (1).png" 
+                src={CHAR_URL} 
                 alt="Digital Literacy Character" 
                 className="w-[200px] h-auto object-contain drop-shadow-lg"
                 referrerPolicy="no-referrer"

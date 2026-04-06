@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-custom: #fcebd5;
+  --color-main-pink: #ff6bad;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-custom min-h-screen flex items-center justify-center p-4 font-sans;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply bg-white rounded-[40px] shadow-2xl w-full max-w-[500px] p-8 relative overflow-hidden;
+  }
+
+  .q-btn {
+    @apply w-full p-4 text-left border-2 border-gray-100 rounded-2xl font-bold text-gray-600 transition-all bg-white mb-3 hover:border-main-pink hover:bg-pink-50 active:scale-95;
+  }
+
+  .badge {
+    @apply w-6 h-6 bg-main-pink text-white rounded-full flex items-center justify-center text-xs font-black;
+  }
+
+  .selected-item {
+    @apply border-main-pink! bg-pink-50!;
+  }
+
+  .pledge-row {
+    @apply bg-white/85 border-l-4 border-main-pink p-2 mb-1.5 rounded-lg text-sm font-bold text-gray-700 text-left shadow-sm;
+  }
+}
